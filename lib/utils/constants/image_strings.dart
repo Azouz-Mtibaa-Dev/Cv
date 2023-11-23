@@ -9,6 +9,7 @@ class TImages {
   static const String onBoardingImage2 =
       "assets/images/on_boarding_images/sammy-line-2.gif";
   static const String user = "assets/images/user.png";
+  static const String azouz = "assets/images/azouz.png";
 
   static const String banner1 = "assets/banners/banner1.png";
   static const String banner2 = "assets/banners/banner2.png";

@@ -1,8 +1,5 @@
-
 import 'package:Portfolio/features/onboarding/widgets/onboardin_next_button.dart';
-import 'package:Portfolio/features/onboarding/widgets/onboarding_dot_navigation.dart';
 import 'package:Portfolio/features/onboarding/widgets/onboarding_page.dart';
-import 'package:Portfolio/features/onboarding/widgets/onboarding_skip.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -28,15 +25,10 @@ class OnBoardingScreen extends StatelessWidget {
                 title: TTexts.onBoardingTitle1,
                 subTitle: TTexts.onBoardingSubTitle1,
               ),
-              OnBoardingPage(
-                image: TImages.onBoardingImage2,
-                title: TTexts.onBoardingTitle2,
-                subTitle: TTexts.onBoardingSubTitle2,
-              ),
             ],
           ),
-          const OnBoardingSkip(),
-          const OnBoardingDotNavigation(),
+          // const OnBoardingSkip(),
+          // const OnBoardingDotNavigation(),
           const OnBoardingNextButton(),
         ],
       ),

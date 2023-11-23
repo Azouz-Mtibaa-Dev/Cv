@@ -111,6 +111,7 @@ flutter:
     - assets/images/splash/splash.png
 
     - assets/images/user.png
+    - assets/images/azouz.png
 
     - assets/framework/android.svg
     - assets/framework/bootsrap.svg

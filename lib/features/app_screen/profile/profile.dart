@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:provider/provider.dart';
@@ -68,7 +67,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: TImages.map,
                     title: 'Location',
                     subTitle: 'Rte Mahdia Klm 5',
-                    onTap: () {},
+                    onTap: () => _launchMap(),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.call,
@@ -82,12 +81,12 @@ class SettingsScreen extends StatelessWidget {
                   const TSectionHeading(
                     title: 'App Setting',
                   ),
-                  TSettingsMenuTile(
-                    icon: Iconsax.location,
-                    title: 'Geolocation',
-                    subTitle: 'Set recommendation based on location',
-                    trailing: Switch(value: true, onChanged: (value) {}),
-                  ),
+                  // TSettingsMenuTile(
+                  //   icon: Iconsax.location,
+                  //   title: 'Geolocation',
+                  //   subTitle: 'Set recommendation based on location',
+                  //   trailing: Switch(value: true, onChanged: (value) {}),
+                  // ),
                   TSettingsMenuTile(
                     icon: Iconsax.moon,
                     title: 'Theme Mode',
@@ -137,4 +136,12 @@ void _sendEmail() async {
   }
 
   await launchUrl(_emailLaunchUri);
+}
+
+void _launchMap() async {
+  final Uri _mapLaunchUri =
+      Uri.parse('https://maps.app.goo.gl/vqA1C31RMojmMxiJ8');
+  if (!await launchUrl(_mapLaunchUri)) {
+    throw Exception('Could not launch $_mapLaunchUri');
+  }
 }

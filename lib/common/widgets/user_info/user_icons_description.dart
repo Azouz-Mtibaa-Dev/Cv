@@ -1,4 +1,3 @@
-
 import 'package:Portfolio/common/widgets/user_info/user_circular_image.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +14,7 @@ class User extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: const UserCircularImage(
-        image: TImages.user,
+        image: TImages.azouz,
         width: 50,
         height: 50,
         padding: 0,

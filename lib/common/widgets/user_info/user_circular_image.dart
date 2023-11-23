@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/colors.dart';
@@ -35,7 +34,7 @@ class UserCircularImage extends StatelessWidget {
             (THelperFunctions.isDarkMode(context)
                 ? TColors.black
                 : TColors.white),
-        borderRadius: BorderRadius.circular(100),
+        borderRadius: BorderRadius.circular(150),
       ),
       child: Center(
         child: Image(
